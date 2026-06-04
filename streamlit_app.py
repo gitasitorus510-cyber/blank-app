@@ -315,7 +315,7 @@ if page == "🏠  Beranda":
 
     # Hero
     now = datetime.datetime.now()
-    greeting = "Selamat Pagi" if now.hour < 11 else ("Selamat Siang" if now.hour < 15 else ("Selamat Sore" if now.hour < 18 else "Selamat Malam"))
+    greeting = "SELAMAT DATANG IBU PERI" if now.hour < 11 else ("SELAMAT DATANG IBU PERI" if now.hour < 15 else ("SELAMAT DATANG IBU PERI" if now.hour < 18 else "SELAMAT DATANG IBU PERI"))
     st.markdown(f"""
     <div class="hero-banner">
         <div class="hero-title">✨ {greeting}, Ibu Dewi!</div>
@@ -371,7 +371,7 @@ if page == "🏠  Beranda":
                     border:1px dashed #c9507a; font-size:.92rem; color:#1a2744; line-height:1.7'>
             🌹 <b>Ibu Dewi</b>, setiap halaman penelitian yang Ibu tulis adalah warisan ilmu 
             yang tak ternilai. Perjalanan akademis Ibu adalah inspirasi bagi banyak orang. 
-            Tetap semangat, tetap bersinar! <b>Kami selalu mendukung Ibu.</b> 💗
+            Tetap semangat, tetap bersinar! <b> Awak Gita selalu mendukung Ibu.</b> 💗
         </div>
         """, unsafe_allow_html=True)
 
@@ -720,7 +720,7 @@ elif page == "📓  Log Harian":
                 padding:18px 22px; margin-bottom:20px; border:1px dashed #c9507a'>
         🌸 <b>Catatan Kecil dari Gita:</b> Log ini adalah tempat Ibu merekam setiap langkah perjalanan akademis 
         Ibu — besar maupun kecil. Setiap pencapaian layak untuk dikenang. 
-        <i>"Perjalanan seribu mil dimulai dari satu langkah."</i> 💗
+        <i>"JANGAN PERNAH MARDANDI BU, TETAP JADI BERKAT DAN DIBERKATI."</i> 💗
     </div>
     """, unsafe_allow_html=True)
 
@@ -792,7 +792,7 @@ elif page == "📓  Log Harian":
                 save_json("log.json", data)
                 st.rerun()
     else:
-        st.info("Belum ada log. Mulai catat aktivitas Ibu hari ini! ✍️")
+        st.info("Belum ada log. Catat aktivitas disini boleh bu! ✍️")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -843,7 +843,7 @@ elif page == "🗂️  Arsip Tugas":
                     st.success("✅ Tugas tersimpan!")
                     st.balloons()
                 else:
-                    st.warning("Nama tugas wajib diisi.")
+                    st.warning("Nama tuga wajib isi, biar bisa simpan berkas ibu.")
 
     with tab2:
         data = load_json("tugas.json")
@@ -896,12 +896,12 @@ elif page == "🗂️  Arsip Tugas":
                         save_json("tugas.json", data)
                         st.rerun()
         else:
-            st.info("Belum ada tugas. Tambahkan tugas pertama Ibu! 🎯")
+            st.info("ibu kalo capek tidur, kalo ad tugas kann ada gita! 🎯")
 
 # ─── Footer ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="footer">
-    💗 Dibuat dengan penuh kasih sayang dan dedikasi oleh <b>Gita Oktaviani Sitorus</b><br>
-    untuk <b>Ibu Dewi Pika Lumbanbatu, S.H., M.H</b> — semoga karya Ibu selalu membawa cahaya ✨
+    💗 Jangan biarkan orang menjatuhkan ibu karena awak ga terima y bu <b>Gita Oktaviani Sitorus</b><br>
+    untuk <b>Ibu Dewi Pika Lumbanbatu, S.H., M.H</b> — semoga karya Ibu selalu jadi berkat ✨
 </div>
 """, unsafe_allow_html=True)
